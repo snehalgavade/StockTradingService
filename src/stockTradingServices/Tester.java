@@ -1,5 +1,5 @@
 package stockTradingServices;
-import static stockTradingServices.CollectionUtils.populateStock; // utils.CollectionUtils.populateStock;
+import static stockTradingServices.CollectionUtils.populateStock; 
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -109,16 +109,7 @@ public class Tester {
 					FileOutputStream fos= new FileOutputStream("stocks.ser");
 					ObjectOutputStream oos = new ObjectOutputStream(fos);
 					oos.writeObject(finalStockList);
-					System.out.println("List saved in the file successfully.");
-					
-					
-//					//for reading
-//				ObjectInputStream ois = new ObjectInputStream(new FileInputStream("stocks.ser"));
-//				ois.read();
-					
-					//for writing into file
-					
-//					
+					System.out.println("List saved in the file successfully.");				
 					break;
 				}
 			}
